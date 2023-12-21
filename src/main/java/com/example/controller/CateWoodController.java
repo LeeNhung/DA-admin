@@ -21,8 +21,7 @@ import com.example.model.CategoryWood;
 @RequestMapping("/cateWood")
 public class CateWoodController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="https://server-production-2465.up.railway.app";
-	
+	private String url="https://da-server-production.up.railway.app";
 	@GetMapping
 	private String getList(HttpSession session, Model model) {
 		List<CategoryWood> cateWoods=Arrays.asList(rest.getForObject(url+"/category-wood/getAll", CategoryWood[].class));
