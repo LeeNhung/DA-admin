@@ -19,7 +19,6 @@ import com.example.model.Contact;
 public class ContactController {
 	private RestTemplate rest=new RestTemplate();
 	private String url="https://server-production-2465.up.railway.app";
-	//private String url="https://da-server2-production.up.railway.app";
 	
 	@GetMapping
 	private String getListContact(HttpSession session,@RequestParam(name="status", defaultValue = "-1", required = false)int status) {
