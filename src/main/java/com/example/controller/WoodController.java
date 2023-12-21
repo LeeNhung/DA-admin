@@ -40,7 +40,7 @@ import com.example.model.Wood;
 @RequestMapping("/wood")
 public class WoodController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="http://localhost:8082";
+	private String url="https://server-production-2465.up.railway.app";
 	//private String url="https://da-server2-production.up.railway.app";
 	@GetMapping
 	private String get(Model model, HttpSession session , @RequestParam(name="category", defaultValue = "0", required = false)int category) {
