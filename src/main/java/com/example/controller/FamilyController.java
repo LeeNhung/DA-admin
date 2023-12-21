@@ -22,7 +22,7 @@ import com.example.model.PlantFamily;
 @RequestMapping("/family")
 public class FamilyController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="http://localhost:8082";
+	private String url="https://server-production-2465.up.railway.app";
 	//private String url="https://da-server2-production.up.railway.app";
 	@GetMapping
 	private String getList(@RequestParam(name="key", defaultValue = "", required = false)String key, Model model, HttpSession session) {
