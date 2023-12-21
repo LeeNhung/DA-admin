@@ -24,7 +24,7 @@ import com.example.model.UserDTO;
 @RequestMapping("/user")
 public class UserController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="https://server-production-2465.up.railway.app";
+	private String url="https://da-server-production.up.railway.app";
 	
 	@PostMapping("/checkLogin")
 	private String checkLogin(UserDTO userDto,
