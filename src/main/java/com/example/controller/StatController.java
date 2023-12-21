@@ -22,7 +22,7 @@ import com.example.model.UsedService;
 @RequestMapping("/stat")
 public class StatController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="https://server-production-2465.up.railway.app";
+	private String url="https://da-server-production.up.railway.app";
 	@GetMapping("/getServiceStatShow")
 	private String show(HttpSession session) {
 		List<ServiceStat>listServiceStat=new ArrayList<>();
