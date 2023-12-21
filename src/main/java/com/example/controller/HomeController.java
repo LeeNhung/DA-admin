@@ -22,7 +22,7 @@ import com.example.model.UserDTO;
 @RequestMapping("/")
 public class HomeController {
 	private RestTemplate rest=new RestTemplate();
-	private String url="http://localhost:8082";
+	private String url="https://server-production-2465.up.railway.app";
 	
 	@GetMapping
 	private String getLogin(HttpSession session, HttpServletRequest request, Model model) {
