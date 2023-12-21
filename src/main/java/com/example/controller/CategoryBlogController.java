@@ -22,7 +22,6 @@ import com.example.model.CategoryBlog;
 public class CategoryBlogController {
 	private RestTemplate rest=new RestTemplate();
 	private String url="https://server-production-2465.up.railway.app";
-	//private String url="https://da-server2-production.up.railway.app";
 	@GetMapping
 	private String getListCategory(HttpSession session) {
 		List<CategoryBlog>listCate=new ArrayList<>();
