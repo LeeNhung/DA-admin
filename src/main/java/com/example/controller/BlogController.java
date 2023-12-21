@@ -36,8 +36,7 @@ import com.example.model.Wood;
 @RequestMapping("/blog")
 public class BlogController {
 	private RestTemplate rest=new RestTemplate();
-	
-	private String url="http://localhost:8082";
+	private String url="https://server-production-2465.up.railway.app";
 	//private String url="https://da-server2-production.up.railway.app";
 	@GetMapping
 	private String getListBlog(HttpSession session,@RequestParam(name="status", required = false, defaultValue = "publish")String status) {
